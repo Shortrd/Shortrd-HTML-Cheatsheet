@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>HTML/CSS Cheatsheet</title>
@@ -6,251 +7,235 @@
 
 <body>
   <table>
-    <tr>
-      <th>Element or Attribute Name</th>
-      <th>Formatted Tag</th>
-      <th>Description of Tag Use</th>
-    </tr>
-    <tr>
-      <td>Document Metadata (Header)</td>
-      <td>&lt;head&gt;</td>
-      <td>Contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</td>
-    </tr>
-    <tr>
+    <thead>
+      <tr id="header">
+        <th>Element or Attribute Name</th>
+        <th>Formatted Tag</th>
+        <th>Description of Tag Use</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Document Metadata (Header)</td>
+        <td><span class="tag">&lt;head&gt;</span></td>
+        <td>Contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</td>
+      </tr>
+      <tr>
         <td>Title</td>
-        <td>&lt;title&gt;</td>
+        <td><span class="tag">&lt;title&gt;</span></td>
         <td>Defines the document's title that is shown in a browser's title bar or a page's tab.</td>
       </tr>
-    <tr>
-      <td>Body</td>
-      <td>&lt;body&gt;</td>
-      <td>Any visible content should be placed within the opening and closing body tags.</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;header&gt;</td>
-        <td>A container usually for either navigational links or introductory content containing &lt;h1&gt; to &lt;h6&gt; headings.</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;nav&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;main&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;footer&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;section&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;article&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;aside&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-      <td>Heading and Sub-headings</td>
-      <td>&lt;h1&gt;, &lt;h2&gt; ... &lt;h6&gt;</td>
-      <td>Headings and sub-headings are used to provide titles for sections of content.</td>
-    </tr>
-    <tr>
-      <td>Paragraph</td>
-      <td>&lt;p&gt;</td>
-      <td>Represents a paragraph.</td>
-    </tr>
-    <tr>
+      <tr>
+        <td>Body</td>
+        <td><span class="tag">&lt;body&gt;</span></td>
+        <td>Any visible content should be placed within the opening and closing body tags.</td>
+      </tr>
+      <tr>
+        <td>Header</td>
+        <td><span class="tag">&lt;header&gt;</span></td>
+        <td>Represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</td>
+      </tr>
+      <tr>
+        <td>Navigation Section</td>
+        <td><span class="tag">&lt;nav&gt;</span></td>
+        <td>Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
+      </tr>
+      <tr>
+        <td>Main</td>
+        <td><span class="tag">&lt;main&gt;</span></td>
+        <td>Represents the dominant content of the <span class="tag">&lt;body&gt;</span> of a document.</td>
+      </tr>
+      <tr>
+        <td>Footer</td>
+        <td><span class="tag">&lt;footer&gt;</span></td>
+        <td>Represents a footer for its nearest ancestor sectioning content or sectioning root element. A <span class="tag">&lt;footer&gt;</span> typically contains information about the author of the section, copyright data or links to related documents.</td>
+      </tr>
+      <tr>
+        <td>Generic Section</td>
+        <td><span class="tag">&lt;section&gt;</span></td>
+        <td>Represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</td>
+      </tr>
+      <tr>
+        <td>Article Contents</td>
+        <td><span class="tag">&lt;article&gt;</span></td>
+        <td>Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</td>
+      </tr>
+      <tr>
+        <td>Aside</td>
+        <td><span class="tag">&lt;aside&gt;</span></td>
+        <td>Represents a portion of a document whose content is only indirectly related to the document's main content.</td>
+      </tr>
+      <tr>
+        <td>Heading and Sub-headings</td>
+        <td><span class="tag">&lt;h1&gt;</span>, <span class="tag">&lt;h2&gt;</span> ... <span class="tag">&lt;h6&gt;</span></td>
+        <td>Headings and sub-headings are used to provide titles for sections of content.</td>
+      </tr>
+      <tr>
+        <td>Paragraph</td>
+        <td><span class="tag">&lt;p&gt;</span></td>
+        <td>Represents a paragraph.</td>
+      </tr>
+      <tr>
         <td>Span</td>
-        <td>&lt;span&gt;</td>
+        <td><span class="tag">&lt;span&gt;</span></td>
         <td>A generic inline container for phrasing content. It should be used only when no other semantic element is appropriate. Span is similar to the 'div' element, but 'div' is a block-level element whereas 'span' is an inline element.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Division</td>
-        <td>&lt;div&gt;</td>
+        <td><span class="tag">&lt;div&gt;</span></td>
         <td>The generic container for flow content. It's used to group content so it can be easily styled using the class or id attributes.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Emphasis</td>
-        <td>&lt;em&gt;</td>
-        <td>For words that have a stressed emphasis compared to surrounding text. Displayed in italic type, but should not be used to apply italic styling. The &lt;em&gt; element represents stress emphasis of its contents.</td>
-    </tr>
-    <tr>
+        <td><span class="tag">&lt;em&gt;</span></td>
+        <td>For words that have a stressed emphasis compared to surrounding text. Displayed in italic type, but should not be used to apply italic styling. The <span class="tag">&lt;em&gt;</span> element represents stress emphasis of its contents.</td>
+      </tr>
+      <tr>
         <td>Strong</td>
-        <td>&lt;strong&gt;</td>
+        <td><span class="tag">&lt;strong&gt;</span></td>
         <td>Indicates that its contents have strong importance, seriousness, or urgency.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Line Break</td>
-        <td>&lt;br&gt;</td>
+        <td><span class="tag">&lt;br&gt;</span></td>
         <td>Produces a line break in text. It is useful for writing a poem or an address, where the division of lines is significant.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Ordered Lists</td>
-        <td>&lt;ol&gt;</td>
+        <td><span class="tag">&lt;ol&gt;</span></td>
         <td>Represents an ordered list of items — typically rendered as a numbered list.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Unordered Lists</td>
-        <td>&lt;ul&gt;</td>
+        <td><span class="tag">&lt;ul&gt;</span></td>
         <td>Represents an unordered list of items, typically rendered as a bulleted list.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>List Items</td>
-        <td>&lt;li&gt;</td>
+        <td><span class="tag">&lt;li&gt;</span></td>
         <td>Used to represent an item in a list. It must be contained in a parent element: an ordered list, an unordered list, or a menu.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Image Embed</td>
-        <td>&lt;img&gt;</td>
-        <td>Embeds an image into the document. Inside &lt;img&gt;, the 'src' attribute is required which contains the path to the image you want to embed. Also, the 'alt' attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility.</td>
-    </tr>
-    <tr class="attribute">
-        <td></td>
-        <td>src</td>
-        <td></td>
-    </tr>
-    <tr class="attribute">
-        <td></td>
-        <td>alt</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;figure&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;figcaption&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
+        <td><span class="tag">&lt;img&gt;</span></td>
+        <td>Embeds an image into the document. Inside <span class="tag">&lt;img&gt;</span>, the 'src' attribute is required.</td>
+      </tr>
+      <tr class="attribute">
+        <td>Source</td>
+        <td><span class="tag">src</span></td>
+        <td>Contains the path to the image you want to embed.</td>
+      </tr>
+      <tr class="attribute">
+        <td>Alternate Text</td>
+        <td><span class="tag">alt</span></td>
+        <td>Holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility.</td>
+      </tr>
+      <tr>
+        <td>Figure</td>
+        <td><span class="tag">&lt;figure&gt;</span></td>
+        <td>Represents self-contained content, potentially with an optional caption.</td>
+      </tr>
+      <tr>
+        <td>Figure Caption</td>
+        <td><span class="tag">&lt;figcaption&gt;</span></td>
+        <td>Represents a caption or legend describing the rest of the contents of its parent <span class="tag">&lt;figure&gt;</span> element.</td>
+      </tr>
+      <tr>
         <td>Video Embed</td>
-        <td>&lt;video&gt;</td>
-        <td>Embeds a media player which supports video playback into the document. Inside &lt;video&gt;, the src attribute is required which contains the path to the image you want to embed. Also, inside the opening tag you can add options such as autoplay, controls, width, height, etc.</td>
-    </tr>
-    <tr class="attribute">
-        <td></td>
-        <td>autoplay</td>
-        <td></td>
-    </tr>
-    <tr class="attribute">
-        <td></td>
-        <td>controls</td>
-        <td></td>
-    </tr>
-    <tr class="attribute">
-        <td></td>
-        <td>width or height</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;embed&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;audio&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
+        <td><span class="tag">&lt;video&gt;</span></td>
+        <td>Embeds a media player which supports video playback into the document. Inside <span class="tag">&lt;video&gt;</span>, the src attribute is required which contains the path to the image you want to embed. Also, inside the opening tag you can add options such as autoplay, controls, width, height, etc.</td>
+      </tr>
+      <tr class="attribute">
+        <td>Autoplay</td>
+        <td><span class="tag">autoplay</span></td>
+        <td>If specified, the video automatically begins to play back as soon as it can do so without stopping to finish loading the data.</td>
+      </tr>
+      <tr class="attribute">
+        <td>Controls</td>
+        <td><span class="tag">controls</span></td>
+        <td>If this attribute is present, the browser will offer controls to allow the user to control video playback, including volume, seeking, and pause/resume playback.</td>
+      </tr>
+      <tr class="attribute">
+        <td>Width/Height</td>
+        <td><span class="tag">width</span> or <span class="tag">height</span></td>
+        <td>Width and Height of the video's display area, in pixels.</td>
+      </tr>
+      <tr>
+        <td>Embed External Content</td>
+        <td><span class="tag">&lt;embed&gt;</span></td>
+        <td>Embeds external content at the specified point in the document. This element is deprecated now.</td>
+      </tr>
+      <tr>
+        <td>Embed Audio</td>
+        <td><span class="tag">&lt;audio&gt;</span></td>
+        <td>Used to embed sound content in documents.</td>
+      </tr>
+      <tr>
         <td>Anchor</td>
-        <td>&lt;a&gt;</td>
-        <td>Creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Inside the opening tag, add additional attributes like href to specify the links destination. Use target="_blank" to make the link open in a new tab.</td>
-    </tr>
-    <tr class="attribute">
-        <td></td>
-        <td>href</td>
-        <td></td>
-    </tr>
-    <tr class="attribute">
-        <td></td>
-        <td>target</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;thead&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;tbody&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;tfoot&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
+        <td><span class="tag">&lt;a&gt;</span></td>
+        <td>Creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Inside the opening tag, add additional attributes like href to specify the links destination.</td>
+      </tr>
+      <tr class="attribute">
+        <td>Hyperlink Reference</td>
+        <td><span class="tag">href</span></td>
+        <td>The URL that the hyperlink points to.</td>
+      </tr>
+      <tr class="attribute">
+        <td>Target</td>
+        <td><span class="tag">target</span></td>
+        <td>Where to display the linked URL. For example, <span class="tag">target= _blank</span> usually opens the link in a new tab.</td>
+      </tr>
+      <tr>
+        <td>Table Head</td>
+        <td><span class="tag">&lt;thead&gt;</span></td>
+        <td>Defines a set of rows defining the head of the columns of the table.</td>
+      </tr>
+      <tr>
+        <td>Table Body</td>
+        <td><span class="tag">&lt;tbody&gt;</span></td>
+        <td>Encapsulates a set of table rows, indicating that they comprise the body of the table.</td>
+      </tr>
+      <tr>
+        <td>Table Foot</td>
+        <td><span class="tag">&lt;tfoot&gt;</span></td>
+        <td>Defines a set of rows summarizing the columns of the table.</td>
+      </tr>
+      <tr>
         <td>Table</td>
-        <td>&lt;table&gt;</td>
+        <td><span class="tag">&lt;table&gt;</span></td>
         <td>Creates a table.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Table Header</td>
-        <td>&lt;th&gt;</td>
+        <td><span class="tag">&lt;th&gt;</span></td>
         <td>Adds table headings clarify the meaning of data.</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Table Row</td>
-        <td>&lt;tr&gt;</td>
+        <td><span class="tag">&lt;tr&gt;</span></td>
         <td>Adds rows to a table.</td>
-    </tr>
-    <tr class="attribute">
+      </tr>
+      <tr class="attribute">
         <td>Column Span</td>
-        <td>colspan</td>
+        <td><span class="tag">colspan</span></td>
         <td>This attribute contains a non-negative integer value that indicates for how many columns the cell extends.</td>
-    </tr>
-    <tr class="attribute">
+      </tr>
+      <tr class="attribute">
         <td>Row Span</td>
-        <td>rowspan</td>
+        <td><span class="tag">rowspan</span></td>
         <td>This attribute contains a non-negative integer value that indicates for how many rows the cell extends.</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;&gt;</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>&lt;&gt;</td>
-        <td></td>
-    </tr>
+      </tr>
+      <tr>
+        <td>Style Information</td>
+        <td><span class="tag">&lt;style&gt;</span></td>
+        <td>Contains style information for a document, or part of a document.</td>
+      </tr>
+      <tr>
+        <td>External Resource Link</td>
+        <td><span class="tag">&lt;link&gt;</span></td>
+        <td>Specifies relationships between the current document and an external resource. This element is most commonly used to link to stylesheets.</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 
