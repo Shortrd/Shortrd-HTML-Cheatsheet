@@ -1,13 +1,258 @@
+<!DOCTYPE html>
 <html>
-
 <head>
- <title>Ryan Short's First Website</title>
+    <title>HTML/CSS Cheatsheet</title>
+    <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Ryan Short</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+  <table>
+    <tr>
+      <th>Element or Attribute Name</th>
+      <th>Formatted Tag</th>
+      <th>Description of Tag Use</th>
+    </tr>
+    <tr>
+      <td>Document Metadata (Header)</td>
+      <td>&lt;head&gt;</td>
+      <td>Contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>&lt;title&gt;</td>
+        <td>Defines the document's title that is shown in a browser's title bar or a page's tab.</td>
+      </tr>
+    <tr>
+      <td>Body</td>
+      <td>&lt;body&gt;</td>
+      <td>Any visible content should be placed within the opening and closing body tags.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;header&gt;</td>
+        <td>A container usually for either navigational links or introductory content containing &lt;h1&gt; to &lt;h6&gt; headings.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;nav&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;main&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;footer&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;section&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;article&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;aside&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+      <td>Heading and Sub-headings</td>
+      <td>&lt;h1&gt;, &lt;h2&gt; ... &lt;h6&gt;</td>
+      <td>Headings and sub-headings are used to provide titles for sections of content.</td>
+    </tr>
+    <tr>
+      <td>Paragraph</td>
+      <td>&lt;p&gt;</td>
+      <td>Represents a paragraph.</td>
+    </tr>
+    <tr>
+        <td>Span</td>
+        <td>&lt;span&gt;</td>
+        <td>A generic inline container for phrasing content. It should be used only when no other semantic element is appropriate. Span is similar to the 'div' element, but 'div' is a block-level element whereas 'span' is an inline element.</td>
+    </tr>
+    <tr>
+        <td>Division</td>
+        <td>&lt;div&gt;</td>
+        <td>The generic container for flow content. It's used to group content so it can be easily styled using the class or id attributes.</td>
+    </tr>
+    <tr>
+        <td>Emphasis</td>
+        <td>&lt;em&gt;</td>
+        <td>For words that have a stressed emphasis compared to surrounding text. Displayed in italic type, but should not be used to apply italic styling. The &lt;em&gt; element represents stress emphasis of its contents.</td>
+    </tr>
+    <tr>
+        <td>Strong</td>
+        <td>&lt;strong&gt;</td>
+        <td>Indicates that its contents have strong importance, seriousness, or urgency.</td>
+    </tr>
+    <tr>
+        <td>Line Break</td>
+        <td>&lt;br&gt;</td>
+        <td>Produces a line break in text. It is useful for writing a poem or an address, where the division of lines is significant.</td>
+    </tr>
+    <tr>
+        <td>Ordered Lists</td>
+        <td>&lt;ol&gt;</td>
+        <td>Represents an ordered list of items — typically rendered as a numbered list.</td>
+    </tr>
+    <tr>
+        <td>Unordered Lists</td>
+        <td>&lt;ul&gt;</td>
+        <td>Represents an unordered list of items, typically rendered as a bulleted list.</td>
+    </tr>
+    <tr>
+        <td>List Items</td>
+        <td>&lt;li&gt;</td>
+        <td>Used to represent an item in a list. It must be contained in a parent element: an ordered list, an unordered list, or a menu.</td>
+    </tr>
+    <tr>
+        <td>Image Embed</td>
+        <td>&lt;img&gt;</td>
+        <td>Embeds an image into the document. Inside &lt;img&gt;, the 'src' attribute is required which contains the path to the image you want to embed. Also, the 'alt' attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility.</td>
+    </tr>
+    <tr class="attribute">
+        <td></td>
+        <td>src</td>
+        <td></td>
+    </tr>
+    <tr class="attribute">
+        <td></td>
+        <td>alt</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;figure&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;figcaption&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Video Embed</td>
+        <td>&lt;video&gt;</td>
+        <td>Embeds a media player which supports video playback into the document. Inside &lt;video&gt;, the src attribute is required which contains the path to the image you want to embed. Also, inside the opening tag you can add options such as autoplay, controls, width, height, etc.</td>
+    </tr>
+    <tr class="attribute">
+        <td></td>
+        <td>autoplay</td>
+        <td></td>
+    </tr>
+    <tr class="attribute">
+        <td></td>
+        <td>controls</td>
+        <td></td>
+    </tr>
+    <tr class="attribute">
+        <td></td>
+        <td>width or height</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;embed&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;audio&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Anchor</td>
+        <td>&lt;a&gt;</td>
+        <td>Creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Inside the opening tag, add additional attributes like href to specify the links destination. Use target="_blank" to make the link open in a new tab.</td>
+    </tr>
+    <tr class="attribute">
+        <td></td>
+        <td>href</td>
+        <td></td>
+    </tr>
+    <tr class="attribute">
+        <td></td>
+        <td>target</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;thead&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;tbody&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;tfoot&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Table</td>
+        <td>&lt;table&gt;</td>
+        <td>Creates a table.</td>
+    </tr>
+    <tr>
+        <td>Table Header</td>
+        <td>&lt;th&gt;</td>
+        <td>Adds table headings clarify the meaning of data.</td>
+    </tr>
+    <tr>
+        <td>Table Row</td>
+        <td>&lt;tr&gt;</td>
+        <td>Adds rows to a table.</td>
+    </tr>
+    <tr class="attribute">
+        <td>Column Span</td>
+        <td>colspan</td>
+        <td>This attribute contains a non-negative integer value that indicates for how many columns the cell extends.</td>
+    </tr>
+    <tr class="attribute">
+        <td>Row Span</td>
+        <td>rowspan</td>
+        <td>This attribute contains a non-negative integer value that indicates for how many rows the cell extends.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;&gt;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>&lt;&gt;</td>
+        <td></td>
+    </tr>
+  </table>
 </body>
- 
+
 </html>
